@@ -31,7 +31,7 @@ class MoviesController extends Controller
             return [$genre['id'] => $genre['name']];
         });
 
-        //  dump($genres);
+         dump($genresArray);
         return view('index', compact('popularMovies', 'genres', 'nowPlayingMovies'));
     }
 
